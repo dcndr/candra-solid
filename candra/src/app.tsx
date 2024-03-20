@@ -9,7 +9,7 @@ export default function App() {
     <Router
       root={props => (
         <>
-          <div class="bg-black/5 flex p-6 h-full min-h-screen">
+          <div class="flex flex-col sm:flex-row p-6 min-h-screen">
             <Nav />
             <Suspense>{props.children}</Suspense>
           </div>
