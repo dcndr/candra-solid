@@ -4,7 +4,10 @@ export default defineConfig({
   // @ts-ignore
   start: {
     server: {
-      preset: "cloudflare-pages"
+      preset: "cloudflare-pages",
+      rollupConfig: {
+        external: ["node:async_hooks"]
+      },
     }
   }
 });
